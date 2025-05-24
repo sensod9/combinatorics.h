@@ -13,12 +13,16 @@
     <ul>
       Returns the size of filled array. Example of usage:
     </ul>
-<code>int r = 3;
+    
+```
+int r = 3;
 char result[1000][r+1];
 long size = permuts('abc', r, result);
 for (int i = 0; i < size; i++) printf("%s ", result[i]);
-<strong>//       Output: "abc acb bac bca cab cba"</strong>
-<strong>//       Output if 'r' = 2: "ab ac ba bc ca cb"</strong></code>
+//       Output: "abc acb bac bca cab cba "
+//       Output if 'r' = 2: "ab ac ba bc ca cb "
+```
+
   </li>
   <li>
     <h3>permutsRep(char* <code>alphabet</code>, unsigned long long <code>repeat</code>, char <code>(*result_array)[r+1]</code>)</h3>
@@ -27,11 +31,15 @@ for (int i = 0; i < size; i++) printf("%s ", result[i]);
     <ul>
       Returns the size of filled array. Example of usage:
     </ul>
-<code>int repeat = 2;
+
+```
+int repeat = 2;
 char result[1000][repeat+1];
 long size = permutsRep('abc', repeat, result);
 for (int i = 0; i < size; i++) printf("%s ", result[i]);
-<strong>//       Output: "aa ab ac ba bb bc ca cb cc"</strong></code>
+//       Output: "aa ab ac ba bb bc ca cb cc "
+```
+
   </li>
   <li>
     <h3>product(char* <code>alphabet1</code>, char* <code>alphabet2</code>, unsigned long long <code>repeat</code>, char <code>(*result_array)[(repeat * 2) + 1]</code>)</h3>
@@ -40,14 +48,17 @@ for (int i = 0; i < size; i++) printf("%s ", result[i]);
     <ul>
       Returns the size of filled array. Example of usage:
     </ul>
-<code>int repeat = 1;
+
+```
+int repeat = 1;
 char result[1000][(repeat * 2)+1];
 long size = product("12", "abc", repeat, result);
 for (int i = 0; i < size; i++) printf("%s ", result[i]);
-<strong>// Output:             "1a 1b 1c 2a 2b 2c "
+// Output:             "1a 1b 1c 2a 2b 2c "
 // if 'repeat' = 2:    "1a1a 1a1b 1a1c 1a2a 1a2b 1a2c 1b1a 1b1b 1b1c 1b2a 1b2b 1b2c 
 //                      1c1a 1c1b 1c1c 1c2a 1c2b 1c2c 2a1a 2a1b 2a1c 2a2a 2a2b 2a2c 
-//                      2b1a 2b1b 2b1c 2b2a 2b2b 2b2c 2c1a 2c1b 2c1c 2c2a 2c2b 2c2c "</strong></code>
+//                      2b1a 2b1b 2b1c 2b2a 2b2b 2b2c 2c1a 2c1b 2c1c 2c2a 2c2b 2c2c "
+```
   </li>
 </ul>
 
